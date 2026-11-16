@@ -44,6 +44,8 @@ impl State {
     }
 
     fn process(&mut self, message: Message) {
+        // TODO: Create a match expression to process the different message
+        // variants using the methods defined above.
         use Message::*;
 
         match message {
@@ -55,8 +57,6 @@ impl State {
                 self.quit();
             },
         }
-        // TODO: Create a match expression to process the different message
-        // variants using the methods defined above.
     }
 }
 
